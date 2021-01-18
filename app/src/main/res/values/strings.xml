@@ -1,0 +1,12 @@
+<resources>
+    <string name="appname">18FOTCA11036</string>
+    <string name="enrollment">18FOTCA11036</string>
+    <string name="firstname">Kishan</string>
+    <string name="lastname">Sakhiya</string>
+    <string name="middlename">Viththlbhai</string>
+    <string name="email">kishan@gmail.com</string>
+    <string name="password">12345678</string>
+    <string name="branch">BCA</string>
+    <string name="gender">Male</string>
+    <string name="city">Rajkot</string>
+</resources>

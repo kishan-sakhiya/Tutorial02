@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/air" />
+
+            <TextView
+                android:id="@+id/txtEnrollentNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center_horizontal"
+                android:text="@string/enrollment"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtFirstName"
+                style="@style/txtView"
+                android:layout_margin="5dp"
+                android:text="@string/firstname" />
+
+            <TextView
+                android:id="@+id/txtLastName"
+                style="@style/txtView"
+                android:layout_margin="5dp"
+                android:text="@string/lastname" />
+
+            <TextView
+                android:id="@+id/txtMiddleName"
+                style="@style/txtView"
+                android:layout_margin="5dp"
+                android:text="@string/middlename" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                style="@style/txtView"
+                android:layout_margin="5dp"
+                android:text="@string/email" />
+
+            <TextView
+                android:id="@+id/txtPassword"
+                style="@style/txtView"
+                android:layout_margin="5dp"
+                android:text="@string/password" />
+
+            <TextView
+                android:id="@+id/txtBranch"
+                style="@style/txtView"
+                android:layout_margin="5dp"
+                android:text="@string/branch" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:text="@string/gender"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/txtCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:text="@string/city"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
